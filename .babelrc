@@ -1,14 +1,18 @@
 {
   "presets": [
+    "es2015",
     "react",
-    "babel-preset-es2015",
-    "babel-preset-stage-3"
+    "stage-0"
   ],
   "env": {
     "development": {
-      "presets": [
-        "react-hmre"
-      ]
+      "plugins": [["react-transform", {
+        "transforms": [{
+          "transform": "react-transform-hmr",
+          "imports": ["react"],
+          "locals": ["module"]
+        }]
+      }]]
     }
   }
 }

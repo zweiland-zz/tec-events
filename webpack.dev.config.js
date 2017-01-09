@@ -6,7 +6,7 @@ module.exports = {
 
   entry: [
     'webpack-hot-middleware/client',
-    './app/index'
+    './src/index'
   ],
 
   output: {
@@ -24,10 +24,11 @@ module.exports = {
     loaders: [
       { test: /\.js?$/,
         loader: 'babel',
-        exclude: path.join(__dirname, 'node_modules') },
+        include: path.join(__dirname, 'src')
+      },
       { test: /\.scss?$/,
         loader: 'style!css!sass',
-        include: path.join(__dirname, 'app', 'styles') },
+        include: path.join(__dirname, 'src', 'styles') },
       { test: /\.png$/,
         loader: 'file' },
       { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
