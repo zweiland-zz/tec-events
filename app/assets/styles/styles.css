@@ -1,0 +1,31 @@
+body {
+  font-size: 18px;
+  line-height: 32px;
+}
+ul#eventsList {
+  border-top: 1px solid #aaa;
+}
+ul#eventsList li {
+  border-bottom: 1px solid #aaa;
+  padding: 2em 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+}
+ul#eventsList ul {
+  margin: 0; padding: 0;
+}
+ul#eventsList ul li {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+ul#eventsList ul li span {
+  display: inline-block;
+  width: 80px;
+}
+.desc {
+  margin-left: 80px;
+}
